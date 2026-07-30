@@ -1,0 +1,16 @@
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+*.pdb
+.vs/
+.idea/
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local release output. GitHub Releases are built by Actions instead of
+# committing the 100+ MiB self-contained executable to Git history.
+dist/*
+!dist/README.md

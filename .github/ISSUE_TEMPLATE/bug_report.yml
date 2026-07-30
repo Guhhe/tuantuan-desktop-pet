@@ -1,0 +1,64 @@
+name: Bug 报告
+description: 报告可复现的程序、动画、导入或兼容性问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请先确认问题仍能在最新 Release 中复现。
+
+  - type: input
+    id: version
+    attributes:
+      label: 团团桌宠版本
+      placeholder: 例如 1.2.1
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: 例如 Windows 11 24H2 x64
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请提供最小、稳定的复现流程。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+    validations:
+      required: true
+
+  - type: textarea
+    id: package
+    attributes:
+      label: 宠物包信息（如相关）
+      description: 可提供 pet.json、验证错误和 WebP SHA-256。请勿上传私密参考照片。
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 确认
+      options:
+        - label: 我已在最新 Release 上复现
+          required: true
+        - label: 我没有在公开内容中包含隐私或未经授权素材
+          required: true

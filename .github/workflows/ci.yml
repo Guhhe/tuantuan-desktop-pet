@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+          cache: true
+          cache-dependency-path: |
+            **/*.csproj
+            global.json
+
+      - name: Restore
+        run: dotnet restore .\TuantuanDesktopPet.sln
+
+      - name: Set up Python for Skill tests
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: skills/requirements.txt
+
+      - name: Test bundled Skills
+        run: |
+          python -m pip install -r skills/requirements.txt
+          python -m unittest discover -s skills/hatch-pet/tests -p "test_*.py" -v
+          python -m unittest discover -s skills/hatch-desktop-pet/tests -p "test_*.py" -v
+
+      - name: Test and publish
+        shell: pwsh
+        run: .\build.ps1
+
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tuantuan-desktop-pet-win-x64
+          path: |
+            dist/团团桌宠.exe
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 14

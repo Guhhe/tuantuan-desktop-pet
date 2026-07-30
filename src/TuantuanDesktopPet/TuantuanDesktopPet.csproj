@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>14.0</LangVersion>
+    <AssemblyName>TuantuanDesktopPet</AssemblyName>
+    <RootNamespace>TuantuanDesktopPet</RootNamespace>
+    <AssemblyTitle>团团桌宠</AssemblyTitle>
+    <Product>团团桌宠</Product>
+    <Description>支持导入 Hatch Pet v2 宠物包的离线 Windows 桌面宠物</Description>
+    <Version>1.2.1</Version>
+    <ApplicationIcon>Assets/TuantuanDesktopPet.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishTrimmed>false</PublishTrimmed>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../TuantuanDesktopPet.Core/TuantuanDesktopPet.Core.csproj" />
+    <PackageReference Include="SkiaSharp" Version="4.150.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="../../assets/tuantuan/spritesheet.webp"
+                      Link="Assets/spritesheet.webp"
+                      LogicalName="TuantuanDesktopPet.Assets.spritesheet.webp" />
+    <EmbeddedResource Include="../../assets/tuantuan/pet.json"
+                      Link="Assets/pet.json"
+                      LogicalName="TuantuanDesktopPet.Assets.pet.json" />
+    <EmbeddedResource Include="../../THIRD-PARTY-NOTICES.txt"
+                      LogicalName="TuantuanDesktopPet.THIRD-PARTY-NOTICES.txt" />
+  </ItemGroup>
+</Project>

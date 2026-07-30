@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuantuanDesktopPet.Core", "src\TuantuanDesktopPet.Core\TuantuanDesktopPet.Core.csproj", "{53FE168C-0D14-48FD-BBAE-A96B2FE417EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuantuanDesktopPet", "src\TuantuanDesktopPet\TuantuanDesktopPet.csproj", "{5AA65E4B-D754-4D93-B5B9-E2ADDFE70633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuantuanDesktopPet.Core.Tests", "tests\TuantuanDesktopPet.Core.Tests\TuantuanDesktopPet.Core.Tests.csproj", "{CBEC4B55-A4DE-46C4-BF39-CC85FB7B1AE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53FE168C-0D14-48FD-BBAE-A96B2FE417EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FE168C-0D14-48FD-BBAE-A96B2FE417EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FE168C-0D14-48FD-BBAE-A96B2FE417EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FE168C-0D14-48FD-BBAE-A96B2FE417EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA65E4B-D754-4D93-B5B9-E2ADDFE70633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA65E4B-D754-4D93-B5B9-E2ADDFE70633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA65E4B-D754-4D93-B5B9-E2ADDFE70633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA65E4B-D754-4D93-B5B9-E2ADDFE70633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBEC4B55-A4DE-46C4-BF39-CC85FB7B1AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEC4B55-A4DE-46C4-BF39-CC85FB7B1AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEC4B55-A4DE-46C4-BF39-CC85FB7B1AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEC4B55-A4DE-46C4-BF39-CC85FB7B1AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

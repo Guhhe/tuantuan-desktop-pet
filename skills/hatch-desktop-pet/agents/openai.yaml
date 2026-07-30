@@ -1,0 +1,4 @@
+interface:
+  display_name: "生成桌宠导入包"
+  short_description: "从用户参考图生成可导入动态桌宠的完整 Hatch Pet v2 包"
+  default_prompt: "使用 $hatch-desktop-pet 根据我提供的参考图生成可供团团桌宠直接导入的 .ttpet 宠物包。"
