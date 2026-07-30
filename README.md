@@ -1,4 +1,8 @@
-# 团团桌宠
+<p align="center">
+  <img src="src/TuantuanDesktopPet/Assets/TuantuanDesktopPet.ico" width="96" height="96" alt="团团桌宠图标">
+</p>
+
+<h1 align="center">团团桌宠</h1>
 
 在没有安装 Codex、没有安装 .NET、没有联网的 Windows 电脑上，运行兼容 Hatch Pet v2
 素材的透明桌面宠物。
@@ -9,9 +13,19 @@
 > Codex 不是运行本程序的前置条件。只有在希望根据参考图自动制作新宠物素材时，才需要
 > Codex 和仓库内附带的 Skill。
 
+## 团团预览
+
+<p align="center">
+  <img src="assets/tuantuan/spritesheet.webp" width="600" alt="团团的 Hatch Pet v2 动画图集">
+</p>
+
+<p align="center">
+  <sub>内置团团的完整 Hatch Pet v2 动画图集，包含待机、走动、互动、跳跃和视线跟随动作。</sub>
+</p>
+
 ## 下载
 
-- [直接下载最新版：团团桌宠.exe](../../releases/latest/download/%E5%9B%A2%E5%9B%A2%E6%A1%8C%E5%AE%A0.exe)
+- [直接下载 v1.2.1：TuantuanDesktopPet.exe](https://github.com/Guhhe/tuantuan-desktop-pet/releases/download/v1.2.1/TuantuanDesktopPet.exe)
 - [查看全部版本与更新说明](../../releases)
 - [下载 SHA-256 校验文件](../../releases/latest/download/SHA256SUMS.txt)
 
@@ -39,11 +53,11 @@
 
 ## 快速开始
 
-1. 从 [GitHub Releases](../../releases/latest) 下载 `团团桌宠.exe`。
+1. 从 [GitHub Releases](../../releases/latest) 下载 `TuantuanDesktopPet.exe`。
 2. 将 EXE 放到一个不会频繁移动的位置，例如：
 
    ```text
-   C:\Users\<你的用户名>\Applications\团团桌宠.exe
+   C:\Users\<你的用户名>\Applications\TuantuanDesktopPet.exe
    ```
 
 3. 双击运行。团团默认出现在主屏幕右下角。
@@ -223,8 +237,8 @@ git tag v1.2.1
 git push origin v1.2.1
 ```
 
-CI 会在 Windows runner 上测试和构建，并将 `团团桌宠.exe`、`SHA256SUMS.txt` 上传到
-对应 GitHub Release。详见 [发布说明](docs/RELEASING.md)。
+CI 会在 Windows runner 上测试和构建，并将 Windows 可执行文件和 `SHA256SUMS.txt`
+上传到对应 GitHub Release。详见 [发布说明](docs/RELEASING.md)。
 
 ## 项目结构
 
