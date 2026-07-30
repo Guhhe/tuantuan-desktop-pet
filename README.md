@@ -297,7 +297,7 @@ build.ps1                  可复现的 Windows 发布脚本
 欢迎提交 bug、功能建议、文档完善和兼容宠物包。开始前请阅读
 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [行为准则](CODE_OF_CONDUCT.md)。
 
-## 许可证与致谢
+## 许可证
 
 - 应用源码采用 [MIT License](LICENSE)。
 - `$hatch-pet` Skill 保留其目录中的 Apache License 2.0。
@@ -305,5 +305,3 @@ build.ps1                  可复现的 Windows 发布脚本
 - 团团及其他宠物美术素材不自动适用 MIT，详见 [素材许可说明](assets/README.md)。
 - WebP 解码使用 [SkiaSharp](https://github.com/mono/SkiaSharp)，详见
   [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt)。
-
-Codex 是可选的宠物制作工具，不是应用运行依赖。本项目与 OpenAI 不存在官方隶属或背书关系。
