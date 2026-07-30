@@ -13,15 +13,22 @@
 > Codex 不是运行本程序的前置条件。只有在希望根据参考图自动制作新宠物素材时，才需要
 > Codex 和仓库内附带的 Skill。
 
-## 团团预览
+## 宠物预览
 
-<p align="center">
-  <img src="assets/tuantuan/spritesheet.webp" width="600" alt="团团的 Hatch Pet v2 动画图集">
-</p>
-
-<p align="center">
-  <sub>内置团团的完整 Hatch Pet v2 动画图集，包含待机、走动、互动、跳跃和视线跟随动作。</sub>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/tuantuan/spritesheet.webp" width="380" alt="团团的 Hatch Pet v2 动画图集">
+    </td>
+    <td align="center">
+      <img src="examples/pets/tudou-tabby/spritesheet.webp" width="380" alt="土豆的 Hatch Pet v2 动画图集">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>团团</strong><br><sub>应用内置默认宠物</sub></td>
+    <td align="center"><strong>土豆</strong><br><sub>由参考照片生成的可导入示例宠物</sub></td>
+  </tr>
+</table>
 
 ## 下载
 
@@ -113,6 +120,24 @@ Alpha 通道、所有必需格和透明保留格；无效素材不会写入宠�
 程序原样复制导入的 WebP 字节。解码帧和透明度掩码只存在于内存，不会创建 PNG、
 缩略图或图片缓存。
 
+### 示例：导入土豆
+
+仓库提供了由猫咪参考照片生成并验证通过的示例宠物“土豆”：
+
+- [下载可直接导入的 `tudou-tabby.ttpet`](examples/pets/tudou-tabby/tudou-tabby.ttpet?raw=1)
+- [查看土豆的 `pet.json`](examples/pets/tudou-tabby/pet.json)
+- [查看土豆的 `spritesheet.webp`](examples/pets/tudou-tabby/spritesheet.webp)
+- [查看示例说明与 SHA-256](examples/pets/tudou-tabby/README.md)
+
+下载 `.ttpet` 后，在 Windows 中右键团团或托盘图标，依次选择：
+
+```text
+默认宠物 → 导入新宠物… → tudou-tabby.ttpet
+```
+
+导入成功后程序会立即切换为土豆；需要换回团团时，在“默认宠物”菜单中重新选择
+“团团”即可。
+
 ## 使用参考图制作新宠物
 
 仓库包含完整的 Codex Skill：
@@ -166,6 +191,9 @@ cp -R skills/hatch-desktop-pet ~/.codex/skills/
    ```
 
 5. 将 `.ttpet` 复制到 Windows 电脑，通过托盘菜单导入。
+
+仓库中的[土豆示例](examples/pets/tudou-tabby/README.md)就是按照以上流程从参考照片制作的，
+既可以作为最终效果预览，也可以用来核对新宠物的目录结构、元数据和导入方式。
 
 参考图建议、完整步骤、质量检查和常见失败处理见
 [使用 Codex 制作新宠物](docs/CREATE_PET_WITH_CODEX.md)。
@@ -244,6 +272,7 @@ CI 会在 Windows runner 上测试和构建，并将 Windows 可执行文件和 
 
 ```text
 assets/                    内置团团宠物包
+examples/pets/             可直接导入的示例宠物包
 docs/                      使用、格式和发布文档
 skills/                    新宠物生成与验证 Skill
 src/TuantuanDesktopPet/    WPF 应用
@@ -272,6 +301,7 @@ build.ps1                  可复现的 Windows 发布脚本
 
 - 应用源码采用 [MIT License](LICENSE)。
 - `$hatch-pet` Skill 保留其目录中的 Apache License 2.0。
+- 宠物美术素材的授权范围见 [素材许可说明](assets/README.md)及各示例宠物目录中的说明。
 - 团团及其他宠物美术素材不自动适用 MIT，详见 [素材许可说明](assets/README.md)。
 - WebP 解码使用 [SkiaSharp](https://github.com/mono/SkiaSharp)，详见
   [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt)。

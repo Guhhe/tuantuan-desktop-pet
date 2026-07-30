@@ -1,0 +1,3 @@
+d576ce38910515ec0dc0da5daf4ad3dc61bc08ed34d22e8044824278876f4f6f  tudou-tabby.ttpet
+22a4831494debd3d3be6926e012bdd3ca4e1ba7b911dc0bec00af7b22825d78f  pet.json
+888ac7eb8c34ea564c98a8fe7d222aea7f45445cca26a6bddd729004c20a899a  spritesheet.webp
