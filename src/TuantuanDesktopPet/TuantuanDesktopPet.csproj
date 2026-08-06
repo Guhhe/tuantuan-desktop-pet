@@ -28,7 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../TuantuanDesktopPet.Core/TuantuanDesktopPet.Core.csproj" />
-    <PackageReference Include="SkiaSharp" Version="4.150.1" />
+    <PackageReference Include="SkiaSharp" Version="4.151.1" />
   </ItemGroup>
 
   <ItemGroup>
